@@ -1,1 +1,154 @@
 
+# Productly – Product Explorer
+
+Productly is a responsive product browsing application built with React and TypeScript. It allows users to explore products, search by product name, filter by category, sort products by price, and interact with a shopping cart.
+
+## Features
+
+- **Product Listing:** Display products using reusable product cards.
+- **Search:** Search products by name.
+- **Category Filter:** Filter products by category.
+- **Price Sorting:** Sort products by price in ascending order.
+- **Shopping Cart:** Add products to the cart and view the item count and total price.
+- **Buy Now:** Display a demo checkout confirmation.
+- **Empty State:** Show a helpful message when no products match the filters.
+- **Responsive Design:** Support desktop, tablet, and mobile screens.
+- **Modern UI:** Use a clean lavender and pink theme.
+
+## Technologies Used
+
+- React
+- TypeScript
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Hooks (`useState`, `useMemo`)
+- npm
+
+## Prerequisites
+
+Before running the project, make sure you have installed:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (included with Node.js)
+- A code editor such as Visual Studio Code
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+If your project is hosted on GitHub, run:
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
+```
+
+Replace `<YOUR_REPOSITORY_URL>` with your repository URL.
+
+Alternatively, download the project ZIP file and extract it.
+
+### 2. Open the project folder
+
+Open the project directory in Visual Studio Code.
+
+```bash
+cd product-explorer
+```
+
+Replace `product-explorer` with your actual project folder name if it differs.
+
+### 3. Install dependencies
+
+Open a terminal in the project root and run:
+
+```bash
+npm install
+```
+
+This installs the dependencies listed in `package.json`.
+
+### 4. Start the development server
+
+Run:
+
+```bash
+npm start
+```
+
+If your project uses Vite, run this command instead:
+
+```bash
+npm run dev
+```
+
+Use the command defined in your project's `package.json`.
+
+### 5. Open the application
+
+Open the local URL displayed in your terminal. Common development URLs include:
+
+- Create React App: `http://localhost:3000`
+- Vite: `http://localhost:5173`
+
+## Project Structure
+
+```text
+product-explorer/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ProductCard.tsx
+│   │   └── ProductFilters.tsx
+│   ├── data/
+│   │   └── products.ts
+│   ├── App.tsx
+│   ├── App.css
+│   └── index.tsx
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+The exact structure may vary depending on your React setup.
+
+## How to Use
+
+1. Open the application in your browser.
+2. Browse the available products.
+3. Enter a product name in the search field.
+4. Select a category to narrow the results.
+5. Enable price sorting to arrange products from lowest to highest price.
+6. Click **Add to Cart** to add a product to your cart.
+7. Click **Cart** to view the selected products and total price.
+8. Click **Buy Now** to view the demo checkout confirmation.
+9. Clear the filters to restore the full product listing.
+
+## Price Format
+
+Product prices are displayed in Indian Rupees (INR), using the `₹` symbol and Indian number formatting.
+
+## Limitations
+
+- The shopping cart is maintained in application state and resets when the page is refreshed.
+- The checkout feature is for demonstration purposes only.
+- No real payments are processed.
+- Product information is stored in the project's local data file unless otherwise configured.
+
+## Future Improvements
+
+- Persistent cart using localStorage.
+- Product detail pages.
+- Product ratings and reviews.
+- Quantity controls and item removal.
+- Backend API integration.
+- User authentication.
+- Payment gateway integration.
+
+## Author
+
+Developed as a React and TypeScript Product Explorer project.
+
+## License
+
+This project is intended for educational and demonstration purposes. Add a suitable open-source license if you plan to distribute it publicly.
+
